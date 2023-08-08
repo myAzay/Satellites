@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  myAppServer:
+    image: myserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./results:/app/results
