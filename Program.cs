@@ -26,7 +26,7 @@ public class Program
 
         string currentDirectory = Directory.GetCurrentDirectory();
         _folderPath = Path.Combine(currentDirectory, _folderName);
-
+        Directory.CreateDirectory(_folderPath);
         try
         {
             var fileName = _defaultFileName;
